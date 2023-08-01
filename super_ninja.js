@@ -34,7 +34,7 @@ const ninja1 = new Ninja("Hyabusa");
 
 
 class Sensei extends Ninja {
-    constructor(name) {
+    constructor(name = 'chicken') {
         super(name, 200, 10, 10)
         // this.health=200, 
         // this.speed = 10, 
@@ -49,5 +49,7 @@ class Sensei extends Ninja {
     }
 }
 
-const superSensei = new Sensei("Chicken");
+const superSensei = new Sensei();
 superSensei.speakWisdom()
+
+superSensei.showStats();
